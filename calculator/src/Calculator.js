@@ -2,6 +2,12 @@ function Calculator() {
     return (
         <div className="container">
             <div className="row justify-content-center min-vh-100">
+                <div className="col-md-6 my-auto text-white">
+                    <h1>This is my calculator</h1>
+                    <span className="block text-sm fs-6 text-gray-300">
+                        Simple and fast calculations to save your time, perform accurate results instantly, and provide a smooth user experience.
+                    </span>
+                </div>
                 <div className="calculator col-md-4 rounded-4 my-auto">
                     <div className="container-fluid">
                         <div className="row justify-content-center g-4 h-100">
@@ -60,7 +66,7 @@ function Calculator() {
                                 <button className="calc-button rounded-2 fs-6 p-3 fw-medium w-100"><span>3</span></button>
                             </div>
                             <div className="col-3 rounded-3">
-                                <button className="calc-button rounded-2 fs-6 p-3 fw-medium w-100"><span>=</span></button>
+                                <button className="calc-button equal rounded-2 p-3 fw-medium w-100"><span>=</span></button>
                             </div>
                         </div>
                     </div>
