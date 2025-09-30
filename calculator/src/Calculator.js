@@ -11,14 +11,21 @@ const buttons = [
 function Calculator() {
     const [num, setNum] = useState("0");
     const onHandler = (value) => {
-        if (value === "AC") {
-            setNum("0");
-        }else if(value === "C"){
-            setNum(()=>num.slice(0,-1)||"0")
-        } else {
-            setNum(() => (num != '0' ? num + value : value));
-        }
+  if (value === "AC") {
+    setNum("0");
+  } else if (value === "C") {
+    setNum(() => num.slice(0, -1) || "0");
+  } else if (value === "=") {
+    try {
+      setNum(() => eval(num)); // calculate result
+    } catch (error) {
+      setNum("Error"); // handle invalid expressions
     }
+  } else {
+    setNum(() => (num !== "0" ? num + value : value));
+  }
+};
+
     return (
         <div className="container">
             <div className="row justify-content-center min-vh-100">
@@ -51,7 +58,7 @@ function Calculator() {
                                 })
                             }
                             <div className="col-3 rounded-3">
-                                <button className="calc-button equal rounded-2 p-2 fs-6 fw-medium w-100"><span>=</span></button>
+                                <button className="calc-button equal rounded-2 p-2 fs-6 fw-medium w-100"onClick={() => onHandler("=")} ><span>=</span></button>
                             </div>
                         </div>
                     </div>
