@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/Time-calculator/static/css/main.4d6b7de1.css",
-    "main.js": "/Time-calculator/static/js/main.b7a3e41a.js",
+    "main.css": "/Time-calculator/static/css/main.81d15c26.css",
+    "main.js": "/Time-calculator/static/js/main.d36a7a05.js",
     "static/js/453.57d26121.chunk.js": "/Time-calculator/static/js/453.57d26121.chunk.js",
     "static/media/grids.png": "/Time-calculator/static/media/grids.9127c1a729328f9b0fb0.png",
+    "static/media/click.mp3": "/Time-calculator/static/media/click.18b06910baf3d2a48dda.mp3",
     "index.html": "/Time-calculator/index.html",
-    "main.4d6b7de1.css.map": "/Time-calculator/static/css/main.4d6b7de1.css.map",
-    "main.b7a3e41a.js.map": "/Time-calculator/static/js/main.b7a3e41a.js.map",
+    "main.81d15c26.css.map": "/Time-calculator/static/css/main.81d15c26.css.map",
+    "main.d36a7a05.js.map": "/Time-calculator/static/js/main.d36a7a05.js.map",
     "453.57d26121.chunk.js.map": "/Time-calculator/static/js/453.57d26121.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d6b7de1.css",
-    "static/js/main.b7a3e41a.js"
+    "static/css/main.81d15c26.css",
+    "static/js/main.d36a7a05.js"
   ]
 }
