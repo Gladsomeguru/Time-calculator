@@ -44,7 +44,7 @@ function Calculator() {
                         Simple and fast calculations to save your time, perform accurate results instantly, and provide a smooth user experience.
                     </span>
                 </div>
-                <div className="calculator col-md-4 col-10 rounded-4 my-auto h-auto pb-4">
+                <div className="calculator col-md-4 col-11 rounded-4 my-auto h-auto pb-4">
                     <div className="container-fluid">
                         <div className="row justify-content-center g-4">
                             <div className="col-12 pt-4 mt-0 mb-3">
