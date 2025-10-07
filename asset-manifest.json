@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.98c90d2e.css",
-    "main.js": "/static/js/main.340acb80.js",
-    "static/js/453.57d26121.chunk.js": "/static/js/453.57d26121.chunk.js",
-    "static/media/grids.png": "/static/media/grids.9127c1a729328f9b0fb0.png",
-    "index.html": "/index.html",
-    "main.98c90d2e.css.map": "/static/css/main.98c90d2e.css.map",
-    "main.340acb80.js.map": "/static/js/main.340acb80.js.map",
-    "453.57d26121.chunk.js.map": "/static/js/453.57d26121.chunk.js.map"
+    "main.css": "/Time-calculator/static/css/main.8f370897.css",
+    "main.js": "/Time-calculator/static/js/main.0dbb05be.js",
+    "static/js/453.57d26121.chunk.js": "/Time-calculator/static/js/453.57d26121.chunk.js",
+    "static/media/grids.png": "/Time-calculator/static/media/grids.9127c1a729328f9b0fb0.png",
+    "index.html": "/Time-calculator/index.html",
+    "main.8f370897.css.map": "/Time-calculator/static/css/main.8f370897.css.map",
+    "main.0dbb05be.js.map": "/Time-calculator/static/js/main.0dbb05be.js.map",
+    "453.57d26121.chunk.js.map": "/Time-calculator/static/js/453.57d26121.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98c90d2e.css",
-    "static/js/main.340acb80.js"
+    "static/css/main.8f370897.css",
+    "static/js/main.0dbb05be.js"
   ]
 }
