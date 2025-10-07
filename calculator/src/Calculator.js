@@ -1,4 +1,5 @@
 import { useState } from "react";
+import audio from "./assets/click.mp3";
 
 const buttons = [
     "AC", "C", "%", "/",
@@ -11,6 +12,8 @@ function Calculator() {
     const [num, setNum] = useState("0");
     const [calculation, setCalculation] = useState("");
     const onHandler = (value) => {
+        const click = new Audio(audio);
+        click.play().catch(() => {});
         if (value === "AC") {
             setNum("0");
             setCalculation("");
@@ -36,24 +39,24 @@ function Calculator() {
     };
 
     return (
-        <div className="container mb-3">
+        <div className="container">
             <div className="row justify-content-center min-vh-100">
-                <div className="col-md-6 col-10 p-md-0 pe-md-3 p-3 my-md-auto text-white">
-                    <h1>Simple Calculator</h1>
+                <div className="col-md-6 col-11 p-md-0 pe-md-3 p-3 my-md-auto mt-4 text-white">
+                    <h1 className="fw-bold">Simple Calculator</h1>
                     <span className="block text-sm fs-6 text-gray-300">
                         Simple and fast calculations to save your time, perform accurate results instantly, and provide a smooth user experience.
                     </span>
                 </div>
-                <div className="calculator col-md-4 col-11 rounded-4 my-auto h-auto pb-4">
+                <div className="calculator col-md-4 col-11 rounded-4 my-md-auto pb-4">
                     <div className="container-fluid">
                         <div className="row justify-content-center g-4">
                             <div className="col-12 pt-4 mt-0 mb-3">
                                 <form>
-                                    <div class="form-group px-0 position-relative">
-                                        <label for="output"></label>
+                                    <div className="form-group px-0 position-relative">
+                                        <label htmlFor="output"></label>
                                         <input type="text"
-                                            class="form-control fs-1 output-box text-end" name="output" id="output" aria-describedby="helpId" value={num} readOnly />
-                                        <small id="helpId" class="fw-medium text-muted position-absolute end-0 me-3 calculation">{calculation}</small>
+                                            className="form-control fs-1 output-box text-end" name="output" id="output" aria-describedby="helpId" value={num} readOnly />
+                                        <small id="helpId" className="fw-medium text-muted position-absolute end-0 me-3 calculation">{calculation}</small>
                                     </div>
                                 </form>
                             </div>

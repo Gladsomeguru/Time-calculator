@@ -20,7 +20,7 @@ code {
 
 
 .calculator {
-  height: calc(100vh - 32px);
+  height: max-content;
   background: rgb(247, 252, 255);
   box-shadow: inset -10px 0px 8px rgba(50, 49, 49, 0.15),
     inset 0px -10px 8px rgba(1, 1, 1, 0.255), 0 0 0 2px rgba(39, 39, 39, 0.086),
