@@ -28,25 +28,23 @@ function Calculator() {
             } catch (error) {
                 setNum("Error"); // handle invalid expressions
             }
-        } else if ((value === "0" || value === "00" || ["+","%","/","*","-"].includes(value)) && (num === "0" || /[+\-*/]$/.test(num))
-        ) {
-            // prevent leading zeros and zeros right after an operator
+        } else if ((value === "0" || value === "00" || ["+", "%", "/", "*", "-"].includes(value)) && (num === "0" || /[+\-*./]$/.test(num))) {
             return;
         } else {
-            setNum(num === "0" ? value : num + value);
+            setNum((num === "0" || num === "Error") ? value : num + value);
         }
     };
 
     return (
-        <div className="container">
+        <div className="container mb-3">
             <div className="row justify-content-center min-vh-100">
-                <div className="col-md-6 col-10 p-md-0 pe-md-3 p-3 pb-0 my-md-auto text-white order-md-1 order-2">
-                    <h1>This is my calculator</h1>
+                <div className="col-md-6 col-10 p-md-0 pe-md-3 p-3 my-md-auto text-white">
+                    <h1>Simple Calculator</h1>
                     <span className="block text-sm fs-6 text-gray-300">
                         Simple and fast calculations to save your time, perform accurate results instantly, and provide a smooth user experience.
                     </span>
                 </div>
-                <div className="calculator col-md-4 col-10 rounded-4 my-auto h-auto pb-4 order-md-2 order-1">
+                <div className="calculator col-md-4 col-10 rounded-4 my-auto h-auto pb-4">
                     <div className="container-fluid">
                         <div className="row justify-content-center g-4">
                             <div className="col-12 pt-4 mt-0 mb-3">

@@ -29,13 +29,13 @@ code {
 }
 
 .output-box {
-  background: radial-gradient(#f1f7fd, #ddf4ff);
+  background: radial-gradient(#f1f7fd, #d6dadd);
   box-shadow: inset -2px 0px 6px rgba(122, 122, 122, 0.05),
     inset 0px -2px 6px rgba(115, 115, 115, 0.05), inset 0px 2px 6px rgba(121, 121, 121, 0.05),
     inset 2px 0px 6px rgba(112, 112, 112, 0.05), 2px 2px 8px 4px rgba(212, 237, 255, 0.321) !important;
   height: 120px;
   border: none !important;
-  color: #8487a4 !important;
+  color: #57596c !important;
 }
 
 .calc-button {
@@ -67,11 +67,11 @@ code {
 
 .calc-button span {
   position: relative;
-  color: #9496aa;
+  color: #6b6e89;
 }
 
 .equal {
-  background-color: rgb(190, 190, 222);
+  background-color: rgb(183, 183, 183);
 }
 
 .calc-button.equal::before {
@@ -82,7 +82,7 @@ code {
   right: 8px;
   bottom: 4px;
   border-radius: 6px;
-  background: linear-gradient(to right, rgb(159, 159, 179), rgb(196, 196, 211));
+  background: linear-gradient(to right, rgb(153, 153, 153), #bcb9b9);
 }
 
 .calc-button.equal span {
