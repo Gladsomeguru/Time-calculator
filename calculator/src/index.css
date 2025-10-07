@@ -8,7 +8,8 @@ body {
   background-image: url("./assets/grids.png"), linear-gradient(to bottom right, #a6a6a6 5%, #5484a1);
   background-repeat: repeat, no-repeat;
   background-blend-mode: multiply;
-  overflow: hidden;
+  scroll-behavior: smooth;
+  overflow-y: auto;
 }
 
 

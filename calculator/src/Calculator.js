@@ -29,15 +29,15 @@ function Calculator() {
     return (
         <div className="container">
             <div className="row justify-content-center min-vh-100">
-                <div className="col-md-6 my-auto text-white">
+                <div className="col-md-6 col-10 p-md-0 p-3 pb-0 my-md-auto text-white order-md-1 order-2">
                     <h1>This is my calculator</h1>
                     <span className="block text-sm fs-6 text-gray-300">
                         Simple and fast calculations to save your time, perform accurate results instantly, and provide a smooth user experience.
                     </span>
                 </div>
-                <div className="calculator col-md-4 col-10 rounded-4 my-auto">
+                <div className="calculator col-md-4 col-10 rounded-4 my-auto h-auto pb-4 order-md-2 order-1">
                     <div className="container-fluid">
-                        <div className="row justify-content-center g-4 h-100">
+                        <div className="row justify-content-center g-4">
                             <div className="col-12 pt-4 mt-0 mb-3">
                                 <form>
                                     <div class="form-group px-0">
