@@ -89,9 +89,14 @@ code {
   color: white;
 }
 
+.calculation{
+  top:30%;
+  opacity: 0.6;
+}
+
 @keyframes flyin {
   0% {
-    transform: translateY(100%);
+    transform: translateY(-100%);
     opacity: 0;
   }
 

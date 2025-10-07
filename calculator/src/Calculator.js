@@ -4,32 +4,43 @@ const buttons = [
     "AC", "C", "%", "/",
     "7", "8", "9", "*",
     "4", "5", "6", "-",
-    "1", "2", "3","+", "0", "00", "."
+    "1", "2", "3", "+", "0", "00", "."
 ];
-
 
 function Calculator() {
     const [num, setNum] = useState("0");
+    const [calculation, setCalculation] = useState("");
     const onHandler = (value) => {
-  if (value === "AC") {
-    setNum("0");
-  } else if (value === "C") {
-    setNum(() => num.slice(0, -1) || "0");
-  } else if (value === "=") {
-    try {
-      setNum(() => eval(num)); // calculate result
-    } catch (error) {
-      setNum("Error"); // handle invalid expressions
-    }
-  } else {
-    setNum(() => (num !== "0" ? num + value : value));
-  }
-};
+        if (value === "AC") {
+            setNum("0");
+            setCalculation("");
+        } else if (value === "C") {
+            if (calculation !== "") {
+                setCalculation("");
+                setNum("0");
+            } else {
+                setNum(() => num.slice(0, -1) || "0");
+            }
+        } else if (value === "=") {
+            try {
+                setNum(eval(num).toString()); // calculate result
+                setCalculation(num)
+            } catch (error) {
+                setNum("Error"); // handle invalid expressions
+            }
+        } else if ((value === "0" || value === "00" || ["+","%","/","*","-"].includes(value)) && (num === "0" || /[+\-*/]$/.test(num))
+        ) {
+            // prevent leading zeros and zeros right after an operator
+            return;
+        } else {
+            setNum(num === "0" ? value : num + value);
+        }
+    };
 
     return (
         <div className="container">
             <div className="row justify-content-center min-vh-100">
-                <div className="col-md-6 col-10 p-md-0 p-3 pb-0 my-md-auto text-white order-md-1 order-2">
+                <div className="col-md-6 col-10 p-md-0 pe-md-3 p-3 pb-0 my-md-auto text-white order-md-1 order-2">
                     <h1>This is my calculator</h1>
                     <span className="block text-sm fs-6 text-gray-300">
                         Simple and fast calculations to save your time, perform accurate results instantly, and provide a smooth user experience.
@@ -40,10 +51,11 @@ function Calculator() {
                         <div className="row justify-content-center g-4">
                             <div className="col-12 pt-4 mt-0 mb-3">
                                 <form>
-                                    <div class="form-group px-0">
+                                    <div class="form-group px-0 position-relative">
                                         <label for="output"></label>
                                         <input type="text"
-                                            class="form-control fs-1 output-box text-end" name="output" id="output" aria-describedby="helpId" value={num} readOnly/>
+                                            class="form-control fs-1 output-box text-end" name="output" id="output" aria-describedby="helpId" value={num} readOnly />
+                                        <small id="helpId" class="fw-medium text-muted position-absolute end-0 me-3 calculation">{calculation}</small>
                                     </div>
                                 </form>
                             </div>
@@ -58,7 +70,7 @@ function Calculator() {
                                 })
                             }
                             <div className="col-3 rounded-3">
-                                <button className="calc-button equal rounded-2 p-2 fs-6 fw-medium w-100"onClick={() => onHandler("=")} ><span>=</span></button>
+                                <button className="calc-button equal rounded-2 p-2 fs-6 fw-medium w-100" onClick={() => onHandler("=")} ><span>=</span></button>
                             </div>
                         </div>
                     </div>
