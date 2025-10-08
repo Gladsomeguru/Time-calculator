@@ -2,10 +2,7 @@ import { useState } from "react";
 import audio from "./assets/click.mp3";
 
 const buttons = [
-    "AC", "bi bi-backspace", "%", "/",
-    "7", "8", "9", "*",
-    "4", "5", "6", "-",
-    "1", "2", "3", "+", "0", "00", "."
+    "AC", "bi bi-backspace", "/", "*", "7", "8", "9", "-", "4", "5", "6", "+", "1", "2", "3", "=", "0", "00", "."
 ];
 
 function Calculator() {
@@ -60,7 +57,7 @@ function Calculator() {
                 </div>
                 <div className={"calculator col-md-4 col-11 rounded-4 my-md-auto pb-4 position-relative" + (turned ? " turned" : "")}>
                     <div className="container-fluid frontside">
-                        <div className="row justify-content-center g-4">
+                        <div className="row g-4">
                             <div className="col-12 pt-4 mt-0 mb-3">
                                 <form>
                                     <div className="form-group px-0 position-relative">
@@ -75,15 +72,15 @@ function Calculator() {
                                 buttons.map((value, index) => {
                                     return (
                                         <div className="col-3 rounded-3" key={index}>
-                                            <button className="calc-button rounded-2 fs-6 p-2 fw-medium w-100"
-                                                onClick={() => onHandler(value)}>{index === 1 ? <span><i className={value}></i></span> : <span>{value}</span>}</button>
+                                            {index === 15 ?
+                                                <button className="calc-button equal rounded-2 p-2 fs-6 fw-medium w-100" style={{ height: "calc(200% + 24px)" }} onClick={() => onHandler("=")} ><span>=</span></button>
+                                                : <button className="calc-button rounded-2 fs-6 p-2 fw-medium w-100" onClick={() => onHandler(value)}>{index === 1 ? <span><i className={value}></i></span> : <span>{value}</span>}</button>
+                                            }
                                         </div>
                                     )
                                 })
                             }
-                            <div className="col-3 rounded-3">
-                                <button className="calc-button equal rounded-2 p-2 fs-6 fw-medium w-100" onClick={() => onHandler("=")} ><span>=</span></button>
-                            </div>
+
                         </div>
                     </div>
                     <div className="backside position-absolute rounded-4">
