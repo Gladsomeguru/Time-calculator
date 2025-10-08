@@ -124,7 +124,7 @@ code {
     inset 0px -2px 6px rgba(115, 115, 115, 0.091), inset 0px 4px 6px rgba(121, 121, 121, 0.05),
     inset 8px 0px 6px rgba(112, 112, 112, 0.05) !important;
   border-radius: 12px;
-  transform: translateY(120%);
+  margin-top:30%;
   /* font-family: "Poppins", sans-serif; */
   font-family: 'Courier New', Courier, monospace;
   font-weight: 500;
@@ -135,7 +135,7 @@ code {
 }
 
 .stroked-text {
-  color: #d4d4d4;
+  color: #b9b9b9;
   /* -webkit-text-stroke: .5px #ebebeb; */
   /* font-weight: bold; */
   letter-spacing: 1px;
