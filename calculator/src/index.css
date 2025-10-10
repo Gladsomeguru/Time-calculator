@@ -65,11 +65,11 @@ code {
   color: #979797;
   text-decoration: none;
   text-underline-offset: 2px;
+  font-weight: bold;
 }
 
 .portfolio-link:hover {
   text-decoration: underline;
-  font-weight: bold;
 }
 
 .arrow::before {
