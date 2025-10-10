@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Time-calculator/static/css/main.395e4f65.css",
-    "main.js": "/Time-calculator/static/js/main.39652a39.js",
-    "static/js/453.57d26121.chunk.js": "/Time-calculator/static/js/453.57d26121.chunk.js",
-    "static/media/bootstrap-icons.woff?": "/Time-calculator/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
-    "static/media/grids.png": "/Time-calculator/static/media/grids.9127c1a729328f9b0fb0.png",
-    "static/media/bootstrap-icons.woff2?": "/Time-calculator/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
-    "static/media/click.mp3": "/Time-calculator/static/media/click.18b06910baf3d2a48dda.mp3",
-    "index.html": "/Time-calculator/index.html",
-    "main.395e4f65.css.map": "/Time-calculator/static/css/main.395e4f65.css.map",
-    "main.39652a39.js.map": "/Time-calculator/static/js/main.39652a39.js.map",
-    "453.57d26121.chunk.js.map": "/Time-calculator/static/js/453.57d26121.chunk.js.map"
+    "main.css": "/Simple-calculator/static/css/main.43425fda.css",
+    "main.js": "/Simple-calculator/static/js/main.82bdbda1.js",
+    "static/js/453.57d26121.chunk.js": "/Simple-calculator/static/js/453.57d26121.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/Simple-calculator/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/grids.png": "/Simple-calculator/static/media/grids.9127c1a729328f9b0fb0.png",
+    "static/media/bootstrap-icons.woff2?": "/Simple-calculator/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "static/media/click.mp3": "/Simple-calculator/static/media/click.18b06910baf3d2a48dda.mp3",
+    "index.html": "/Simple-calculator/index.html",
+    "main.43425fda.css.map": "/Simple-calculator/static/css/main.43425fda.css.map",
+    "main.82bdbda1.js.map": "/Simple-calculator/static/js/main.82bdbda1.js.map",
+    "453.57d26121.chunk.js.map": "/Simple-calculator/static/js/453.57d26121.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.395e4f65.css",
-    "static/js/main.39652a39.js"
+    "static/css/main.43425fda.css",
+    "static/js/main.82bdbda1.js"
   ]
 }
