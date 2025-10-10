@@ -65,16 +65,16 @@ code {
   color: #979797;
   text-decoration: none;
   text-underline-offset: 2px;
-  font-weight: bold;
 }
 
 .portfolio-link:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .arrow::before {
-  vertical-align: -.25em !important;
-  padding-left: 4px;
+  vertical-align: -.26em !important;
+  padding-left: 8px;
 }
 
 
