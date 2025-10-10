@@ -36,7 +36,59 @@ code {
 
 .calculator.turned {
   transform: rotateY(180deg);
+}
+
+.calculator .backside {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  box-shadow: inset -10px 0px 5px rgba(50, 49, 49, 0.15),
+    inset 0px -10px 5px rgba(1, 1, 1, 0.255), inset 5px 0px 10px rgba(1, 1, 1, 0.255), 0 0 0 2px rgba(39, 39, 39, 0.086),
+    5px 10px 10px rgba(0, 0, 0, 0.197) !important;
+  border-radius: 16px;
+  background: radial-gradient(#ffffff, #dddcdc);
   backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+
+.backside svg:hover {
+  fill: #979797 !important;
+  transition: fill 0.3s ease-in-out !important;
+}
+
+.backside svg:hover path {
+  fill: #a7a5a5 !important;
+}
+
+.portfolio-link {
+  color: #979797;
+  text-decoration: none;
+  text-underline-offset: 2px;
+  font-weight: bold;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+}
+
+.arrow::before {
+  vertical-align: -.25em !important;
+  padding-left: 4px;
+}
+
+
+
+.cover {
+  width: 80%;
+  height: max-content;
+  box-shadow: inset -2px 0px 8px rgba(122, 122, 122, 0.067),
+    inset 0px -2px 6px rgba(115, 115, 115, 0.091), inset 0px 4px 6px rgba(121, 121, 121, 0.05),
+    inset 8px 0px 6px rgba(112, 112, 112, 0.05) !important;
+  border-radius: 12px;
+  margin-top: 30%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
 }
 
 .output-box {
@@ -105,32 +157,6 @@ code {
   opacity: 0.6;
 }
 
-.calculator .backside {
-  width: 100%;
-  height: 100%;
-  inset: 0;
-  box-shadow: inset -10px 0px 5px rgba(50, 49, 49, 0.15),
-    inset 0px -10px 5px rgba(1, 1, 1, 0.255), inset 5px 0px 10px rgba(1, 1, 1, 0.255), 0 0 0 2px rgba(39, 39, 39, 0.086),
-    5px 10px 10px rgba(0, 0, 0, 0.197) !important;
-  border-radius: 16px;
-  background: radial-gradient(#ffffff, #dddcdc);
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-}
-
-.cover {
-  width: 80%;
-  height: max-content;
-  box-shadow: inset -2px 0px 8px rgba(122, 122, 122, 0.067),
-    inset 0px -2px 6px rgba(115, 115, 115, 0.091), inset 0px 4px 6px rgba(121, 121, 121, 0.05),
-    inset 8px 0px 6px rgba(112, 112, 112, 0.05) !important;
-  border-radius: 12px;
-  margin-top:30%;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 500;
-}
-
 .dev-name {
   font-size: 14px;
 }
@@ -151,20 +177,22 @@ code {
   position: absolute;
 }
 
-.one{
+.one {
   left: 10%;
   top: 10%;
 }
 
-.two{
+.two {
   right: 10%;
   top: 10%;
 }
-.three{
+
+.three {
   bottom: 10%;
   left: 10%;
 }
-.four{
+
+.four {
   bottom: 10%;
   right: 10%;
 }
